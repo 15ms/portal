@@ -1,0 +1,38 @@
+{
+  "name": "@epiijs/portal",
+  "version": "0.1.0",
+  "description": "To render web shell html by javascript.",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "rollup -c && nyc --reporter=lcov mocha test/index.js --exit",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epiijs/epii-portal.git"
+  },
+  "keywords": [
+    "epii",
+    "html"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/epiijs/epii-portal/issues"
+  },
+  "homepage": "https://github.com/epiijs/epii-portal#readme",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "latest",
+    "@tsconfig/node12": "^1.0.9",
+    "@types/mime-types": "^2.1.1",
+    "@types/node": "^17.0.31",
+    "mocha": "^10.0.0",
+    "nyc": "^15.1.0",
+    "rollup": "^2.70.2",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "mime-types": "^2.1.35"
+  }
+}
